@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F3C2B1B32063FAA10067F078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C2B1B22063FAA10067F078 /* AppDelegate.swift */; };
-		F3C2B1B52063FAA10067F078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C2B1B42063FAA10067F078 /* ViewController.swift */; };
 		F3C2B1B82063FAA10067F078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C2B1B62063FAA10067F078 /* Main.storyboard */; };
 		F3C2B1BA2063FAA10067F078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C2B1B92063FAA10067F078 /* Assets.xcassets */; };
 		F3C2B1BD2063FAA10067F078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C2B1BB2063FAA10067F078 /* LaunchScreen.storyboard */; };
@@ -47,7 +46,6 @@
 /* Begin PBXFileReference section */
 		F3C2B1AF2063FAA10067F078 /* IosConWorkShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosConWorkShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C2B1B22063FAA10067F078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3C2B1B42063FAA10067F078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3C2B1B72063FAA10067F078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3C2B1B92063FAA10067F078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3C2B1BC2063FAA10067F078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,6 +94,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F31AF93F207A2327007071EF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2B1B62063FAA10067F078 /* Main.storyboard */,
+				F3C2B1B22063FAA10067F078 /* AppDelegate.swift */,
+				F3C2B1BB2063FAA10067F078 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F31AF940207A2358007071EF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2B1F220640C300067F078 /* UIDate+RealProgrammers.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F31AF941207A2390007071EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2B1E62063FF170067F078 /* ProgrammerResponse.swift */,
+				F3C2B1E02063FB030067F078 /* Programmer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F31AF942207A23EB007071EF /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2B1E42063FDEC0067F078 /* EntityGateway.swift */,
+				F3C2B1F420640E6A0067F078 /* ProgrammersRepository.swift */,
+				F3C2B1E22063FD290067F078 /* ShowProgrammerListUseCase.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		F31AF943207A2497007071EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F31AF944207A2510007071EF /* Cell */,
+				F3C2B1EC206403AB0067F078 /* ProgrammersTableViewController.swift */,
+				F3C2B1EA2064018F0067F078 /* ProgrammerListPresenter.swift */,
+				F3C2B1E82064000B0067F078 /* ProgrammerPresentation.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F31AF944207A2510007071EF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2B1EE2064063D0067F078 /* ProgrammerTableViewCell.swift */,
+				F3C2B1F0206407850067F078 /* ProgrammerCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F3C2B1A62063FAA10067F078 = {
 			isa = PBXGroup;
 			children = (
@@ -119,23 +174,13 @@
 		F3C2B1B12063FAA10067F078 /* IosConWorkShop */ = {
 			isa = PBXGroup;
 			children = (
-				F3C2B1B22063FAA10067F078 /* AppDelegate.swift */,
-				F3C2B1B42063FAA10067F078 /* ViewController.swift */,
-				F3C2B1B62063FAA10067F078 /* Main.storyboard */,
+				F31AF93F207A2327007071EF /* App */,
+				F31AF940207A2358007071EF /* Extension */,
+				F31AF941207A2390007071EF /* Model */,
+				F31AF942207A23EB007071EF /* Repo */,
+				F31AF943207A2497007071EF /* View */,
 				F3C2B1B92063FAA10067F078 /* Assets.xcassets */,
-				F3C2B1BB2063FAA10067F078 /* LaunchScreen.storyboard */,
 				F3C2B1BE2063FAA10067F078 /* Info.plist */,
-				F3C2B1E02063FB030067F078 /* Programmer.swift */,
-				F3C2B1E22063FD290067F078 /* ShowProgrammerListUseCase.swift */,
-				F3C2B1E42063FDEC0067F078 /* EntityGateway.swift */,
-				F3C2B1E62063FF170067F078 /* ProgrammerResponse.swift */,
-				F3C2B1E82064000B0067F078 /* ProgrammerPresentation.swift */,
-				F3C2B1EA2064018F0067F078 /* ProgrammerListPresenter.swift */,
-				F3C2B1EC206403AB0067F078 /* ProgrammersTableViewController.swift */,
-				F3C2B1EE2064063D0067F078 /* ProgrammerTableViewCell.swift */,
-				F3C2B1F0206407850067F078 /* ProgrammerCellView.swift */,
-				F3C2B1F220640C300067F078 /* UIDate+RealProgrammers.swift */,
-				F3C2B1F420640E6A0067F078 /* ProgrammersRepository.swift */,
 			);
 			path = IosConWorkShop;
 			sourceTree = "<group>";
@@ -300,7 +345,6 @@
 				F3C2B1F320640C300067F078 /* UIDate+RealProgrammers.swift in Sources */,
 				F3C2B1ED206403AB0067F078 /* ProgrammersTableViewController.swift in Sources */,
 				F3C2B1F520640E6A0067F078 /* ProgrammersRepository.swift in Sources */,
-				F3C2B1B52063FAA10067F078 /* ViewController.swift in Sources */,
 				F3C2B1E12063FB030067F078 /* Programmer.swift in Sources */,
 				F3C2B1E52063FDEC0067F078 /* EntityGateway.swift in Sources */,
 				F3C2B1E92064000B0067F078 /* ProgrammerPresentation.swift in Sources */,
