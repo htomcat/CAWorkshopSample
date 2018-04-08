@@ -32,5 +32,6 @@ class ProgrammerListPresenter {
 
 extension ProgrammerListPresenter: ProgrammerPresentation {
     func present(programmers: [ProgrammerResponse]) {
+        programmerResponses = programmers
     }
 }

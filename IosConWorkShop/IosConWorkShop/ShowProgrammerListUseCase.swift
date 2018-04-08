@@ -12,18 +12,17 @@ import Foundation
 class ShowProgrammerListUseCase {
     
     let entityGateway: EntityGateway
-    //let presenter: ProgrammerPresentation
     var presenter: ProgrammerPresentation?
+
+    // MARK: - Initializer
     init(entityGateway: EntityGateway) {
         self.entityGateway = entityGateway
-        //self.presenter = presenter
     }
     func showProgrammer() {
         // 1. Fetch programmer data
         let programmers = entityGateway.fetchProgrammers()
         
         // 2. Processs programmer data
-        
         let programmerResponse = programmers.map {
             ProgrammerResponse(programmer: $0)
         }

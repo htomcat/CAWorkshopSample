@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let initialVC = storyboard.instantiateInitialViewController() as! UINavigationController
         let topViewController = initialVC.topViewController as! ProgrammersTableViewController
         
-        let entityGateway = ProgrammersRepo()
+        let entityGateway = ProgrammersRepository()
         let useCase = ShowProgrammerListUseCase(entityGateway: entityGateway)
         let presenter = ProgrammerListPresenter(useCase: useCase)
         useCase.presenter = presenter

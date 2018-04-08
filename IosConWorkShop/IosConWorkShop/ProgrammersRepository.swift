@@ -8,12 +8,12 @@
 
 import Foundation
 
-class ProgrammersRepo {
+class ProgrammersRepository {
     var programmers: [Programmer]
     
     init() {
-        let Tomofumi = Programmer(firstName: "Tomofumi",
-                                    lastName: "Hamada",
+        let Mark = Programmer(firstName: "Marc",
+                                    lastName: "Jacombs",
                                     emacs: 7,
                                     caffeine: 100,
                                     rating: 10000,
@@ -27,10 +27,10 @@ class ProgrammersRepo {
                                interviewDate: Date(),
                                favourite: false)
         
-        programmers = [Tomofumi, James]
+        programmers = [Mark, James]
     }
 }
-extension ProgrammersRepo: EntityGateway {
+extension ProgrammersRepository: EntityGateway {
     func fetchProgrammers() -> [Programmer] {
         return programmers
     }
