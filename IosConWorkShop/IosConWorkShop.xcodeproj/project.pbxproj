@@ -24,7 +24,7 @@
 		F3C2B1EF2064063D0067F078 /* ProgrammerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C2B1EE2064063D0067F078 /* ProgrammerTableViewCell.swift */; };
 		F3C2B1F1206407850067F078 /* ProgrammerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C2B1F0206407850067F078 /* ProgrammerCellView.swift */; };
 		F3C2B1F320640C300067F078 /* UIDate+RealProgrammers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C2B1F220640C300067F078 /* UIDate+RealProgrammers.swift */; };
-		F3C2B1F520640E6A0067F078 /* ProgrammersRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C2B1F420640E6A0067F078 /* ProgrammersRepo.swift */; };
+		F3C2B1F520640E6A0067F078 /* ProgrammersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C2B1F420640E6A0067F078 /* ProgrammersRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 		F3C2B1EE2064063D0067F078 /* ProgrammerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammerTableViewCell.swift; sourceTree = "<group>"; };
 		F3C2B1F0206407850067F078 /* ProgrammerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammerCellView.swift; sourceTree = "<group>"; };
 		F3C2B1F220640C300067F078 /* UIDate+RealProgrammers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDate+RealProgrammers.swift"; sourceTree = "<group>"; };
-		F3C2B1F420640E6A0067F078 /* ProgrammersRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammersRepo.swift; sourceTree = "<group>"; };
+		F3C2B1F420640E6A0067F078 /* ProgrammersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammersRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 				F3C2B1EE2064063D0067F078 /* ProgrammerTableViewCell.swift */,
 				F3C2B1F0206407850067F078 /* ProgrammerCellView.swift */,
 				F3C2B1F220640C300067F078 /* UIDate+RealProgrammers.swift */,
-				F3C2B1F420640E6A0067F078 /* ProgrammersRepo.swift */,
+				F3C2B1F420640E6A0067F078 /* ProgrammersRepository.swift */,
 			);
 			path = IosConWorkShop;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 				F3C2B1E32063FD290067F078 /* ShowProgrammerListUseCase.swift in Sources */,
 				F3C2B1F320640C300067F078 /* UIDate+RealProgrammers.swift in Sources */,
 				F3C2B1ED206403AB0067F078 /* ProgrammersTableViewController.swift in Sources */,
-				F3C2B1F520640E6A0067F078 /* ProgrammersRepo.swift in Sources */,
+				F3C2B1F520640E6A0067F078 /* ProgrammersRepository.swift in Sources */,
 				F3C2B1B52063FAA10067F078 /* ViewController.swift in Sources */,
 				F3C2B1E12063FB030067F078 /* Programmer.swift in Sources */,
 				F3C2B1E52063FDEC0067F078 /* EntityGateway.swift in Sources */,
